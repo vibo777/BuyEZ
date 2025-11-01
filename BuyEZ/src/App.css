@@ -1,16 +1,13 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+.logo{
+  height: 6em;
+  will-change: filter;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -18,19 +15,32 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* CSS for Navbar */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  list-style-type: none;
+  margin-right:200px;
+}
+ul.nav-links>li>a{
+  color: #222222;
+}
+
+/* CSS for Right Menu */
+.right-menu{
+  display:flex;
+  justify-content:space-between;
+}
+.account{
+    margin-left: 20px;
 }
 
 .card {
@@ -39,4 +49,37 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Css for Product List */
+.product-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product-card{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.product-card img{
+  max-width: 100%;
+  height: 300px;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+/* CSS for Footer */
+.Footer-container{
+  height:50px;
+  width:100%;
+  color:#ffffff;
+  background-color:#b97a4f;
+}
+.Footer-title{
+  padding:15px 0px;
 }

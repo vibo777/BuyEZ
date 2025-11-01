@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div>
-      <h1>Footer Component</h1>
+    <div className="Footer-container">
+      <h4 className="Footer-title">BuyEZ All Rights Reserved, Copyright @2025</h4>
     </div>
   )
 }
