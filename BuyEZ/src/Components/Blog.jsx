@@ -4,7 +4,7 @@ export default function Blog() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("https://loxam.re/wp-json/wp/v2/posts")
+    fetch("https://newsdata.io/api/1/latest?apikey=pub_47c868103ba54235a5e032b93af1bf82&q=lifestyle")
       .then(res => res.json())
       .then(data => 
         setPosts(data)
@@ -17,8 +17,10 @@ export default function Blog() {
       <h2>WordPress Blog Posts</h2>
       {posts.map(post => (
         <div key={post.id}>
-          <h2>{post.title.rendered}</h2>
-          <h3>{post.excerpt.rendered}</h3>
+          <h1>{post.title}</h1>
+          <h2>{post.description}</h2>
+          <img src={post.image_url} alt="posts_img"> </img>
+
         </div>
       ))}
     </div>
