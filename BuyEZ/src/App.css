@@ -73,6 +73,48 @@ ul.nav-links>li>a{
   object-fit: contain;
 }
 
+/* CSS For Blog Page */
+.blog-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.blog-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* prevents image distortion */
+}
+.blog-content{
+  padding: 20px;
+}
+.blog-title{
+  font-size:22px;
+  font-weight:bold;
+}
+.blog-description{
+   font-size: 16px;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 👈 shows only 3 lines */
+  -webkit-box-orient: vertical;
+}
+
+
+/* CSS For Blog Page Ends */
+
+
 /* CSS for Footer */
 .Footer-container{
   height:50px;

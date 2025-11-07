@@ -4,23 +4,21 @@ export default function Blog() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("https://newsdata.io/api/1/latest?apikey=pub_47c868103ba54235a5e032b93af1bf82&q=lifestyle")
+    fetch("https://newsdata.io/api/1/latest?apikey=pub_47c868103ba54235a5e032b93af1bf82&q=online shopping")
       .then(res => res.json())
-      .then(data => 
-        setPosts(data)
-      )
+      .then(data => setPosts(data.results))
       .catch(err => console.error("Error fetching posts:", err));
   }, []);
 
   return (
-    <div>
-      <h2>WordPress Blog Posts</h2>
+    <div className="blog-container">
       {posts.map(post => (
-        <div key={post.id}>
-          <h1>{post.title}</h1>
-          <h2>{post.description}</h2>
-          <img src={post.image_url} alt="posts_img"> </img>
-
+        <div className="blog-card" key={post.id}>
+          <img src={post.image_url} alt="posts_img"/> 
+          <div className="blog-content">
+            <h1 className="blog-title">{post.title}</h1>
+            <h2 className="blog-description">{post.description}</h2>
+          </div>  
         </div>
       ))}
     </div>
