@@ -107,7 +107,6 @@ ul.nav-links>li>a{
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* 👈 shows only 3 lines */
   -webkit-box-orient: vertical;
 }
 
