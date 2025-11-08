@@ -115,12 +115,28 @@ ul.nav-links>li>a{
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  
 }
-
 
 /* CSS For Blog Page Ends */
 
+/* CSS for Pagination starts */
+.pagination-wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px; 
+}
+.pg-btn{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.pg-btn.active{
+  background-color:#b97a4f;
+  color:#ffffff;
+  border:none;
+  outline: none;
+}
+
+/* CSS for Pagination starts */
 
 /* CSS for Footer */
 .Footer-container{
