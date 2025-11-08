@@ -7,23 +7,27 @@ import AboutUs from './Components/AboutUs.jsx';
 import Shop from './Components/Shop.jsx';
 import Blog from './Components/Blog.jsx';
 import Contact from './Components/Contact.jsx';
+import appStore from './Redux_Components/appStore.jsx';
+import { Provider } from "react-redux";
 
 function App() {
 
   return (
-    <>
-      <BrowserRouter>
-        <Header/>
-          <Routes>
-            <Route path='/' element={<HomePage/>}/>
-            <Route path='/about' element={<AboutUs/>}/>
-            <Route path='/shop' element={<Shop/>}/>
-            <Route path='/blog' element={<Blog/>}/>
-            <Route path='/contact' element={<Contact/>}/>  
-          </Routes>
-        <Footer/>  
-      </BrowserRouter>
-    </>
+    
+    <Provider store={appStore}>
+        <BrowserRouter>
+          <Header/>
+            <Routes>
+              <Route path='/' element={<HomePage/>}/>
+              <Route path='/about' element={<AboutUs/>}/>
+              <Route path='/shop' element={<Shop/>}/>
+              <Route path='/blog' element={<Blog/>}/>
+              <Route path='/contact' element={<Contact/>}/>  
+            </Routes>
+          <Footer/>  
+        </BrowserRouter>
+    </Provider>
+    
   )
 }
 
