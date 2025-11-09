@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
+import Banner from "./Banner";
 
-export default function Blog() {
+export default function Blog(props) {
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postPerPage, setPostPerPage] = useState(12);
@@ -35,8 +36,13 @@ export default function Blog() {
 
   return (
     <>
+    <Banner/>
+    
+    <div className='banner-title'>
+      <h1>{props.name}</h1>
+    </div>
+    
     <div className="blog-container">
-      
       {posts.slice(firstIndex,lastIndex).map(post => (
         <div className="blog-card" key={post.id}>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qcfDI8z36AkniszDbj8wWMyS4nmkBB66PA&s" alt="posts_img"/> 

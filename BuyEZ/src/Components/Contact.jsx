@@ -1,9 +1,15 @@
+import Banner from './Banner';
+
 import React from 'react'
 
-export default function Contact() {
+export default function Contact(props) {
+
   return (
     <div>
-      <h1>This is Contact Page !!!</h1>
+      <Banner/>
+      <div className='banner-title'>
+        <h1>{props.name}</h1>
+      </div> 
     </div>
   )
 }

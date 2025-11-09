@@ -17,13 +17,13 @@ function App() {
     <Provider store={appStore}>
         <BrowserRouter>
           <Header/>
-            <Routes>
-              <Route path='/' element={<HomePage/>}/>
-              <Route path='/about' element={<AboutUs/>}/>
-              <Route path='/shop' element={<Shop/>}/>
-              <Route path='/blog' element={<Blog/>}/>
-              <Route path='/contact' element={<Contact/>}/>  
-            </Routes>
+              <Routes>
+                <Route path='/' element={<HomePage/>}/>
+                <Route path='/about' element={<AboutUs name="About us"/> }/>
+                <Route path='/shop' element={<Shop name="Products" />}/>
+                <Route path='/blog' element={<Blog name="Blogs" />}/>
+                <Route path='/contact' element={<Contact name="Contact" />}/>  
+              </Routes>
           <Footer/>  
         </BrowserRouter>
     </Provider>
