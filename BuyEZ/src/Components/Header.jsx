@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../assets/BuyEz.png';
-import search from '../assets/icons8-search.gif';
 import {Link} from 'react-router-dom';
 import { useSelector } from "react-redux";
 
@@ -8,6 +7,7 @@ export default function Header() {
 
   // Subscribing to the store using selector
   const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
 
   return (
     <div className='header-container'>

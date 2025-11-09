@@ -15,14 +15,6 @@ export default function Blog() {
   }, []);
 
   const totalPages = Math.ceil(posts.length/postPerPage);
-
-  // useEffect(() => {
-  //   if (currentPage > totalPages) {
-  //     setCurrentPage(totalPages);
-  //   }
-  // }, [currentPage,totalPages]);
-
-
   const lastIndex = currentPage * postPerPage; 
   const firstIndex = lastIndex - postPerPage;
   
@@ -43,7 +35,6 @@ export default function Blog() {
 
   return (
     <>
-    <h2>{currentPage}</h2>
     <div className="blog-container">
       
       {posts.slice(firstIndex,lastIndex).map(post => (
