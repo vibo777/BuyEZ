@@ -170,6 +170,116 @@ ul.nav-links>li>a{
 }
 /* CSS for Pagination Ends */
 
+
+/* CSS For Contact Page */
+.contact-header{
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 36px;
+}
+.contact-title{
+  color: #333;
+  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.sub-title{
+  font-family: "Josefin Sans", sans-serif;  
+  margin-top: 10px;
+  font-weight: 400; 
+  font-style: normal;
+  font-size: 16px;
+  color: #666666;
+  width: 700px;
+}
+.contact-header p{
+  color: #555;
+  margin: 0 auto;
+}
+.form-container{
+  display: flex;
+}
+.form-container  > .left{
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.item{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.item .logo{
+  width: 40px;
+  height: 40px;
+  color: #b97a4f;
+}
+.item .details h3{
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+.item .details p{
+  margin: 5px 0 0 0;
+  color: #836666;
+  font-weight: 500;
+}
+.form-container  > .right{
+  flex: 1;
+  padding: 20px;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+.contact-form input,
+.contact-form textarea{
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.contact-form > label{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.contact-form textarea{
+  resize: vertical;
+  min-height: 100px;
+}
+.contact-btn{
+  margin-top: 10px;
+  padding: 12px 30px;
+  color: #222222;
+  border: 1px solid #222222;
+  cursor: pointer;
+  width: 170px;
+  border-radius: 0px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.contact-btn:hover{
+  background-color:#b97a4f;
+  color:#ffffff;
+  border:none;
+  outline: none;
+}
+/* CSS For Contact Page Ends */
+
 /* CSS for Footer */
 .Footer-container{
   height:50px;
