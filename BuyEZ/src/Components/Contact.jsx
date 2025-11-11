@@ -1,8 +1,23 @@
 import Banner from './Banner';
-
-import React from 'react'
+import { useState,React } from 'react';
 
 export default function Contact(props) {
+
+  let [details, setDetails] = useState({
+    name:"",
+    email:"",
+    message:""
+  }); 
+
+  const handleInput=(event)=>{
+    setDetails((prevObj) => {
+      return { ...prevObj, [event.target.name]: event.target.value};
+    });
+  }
+
+  const handleSubmit=(event)=>{
+    console.log(details);
+  }
 
   return (
     <div>
@@ -53,13 +68,32 @@ export default function Contact(props) {
           </div>
         </div>
         <div className="right">
-            <form className='contact-form'>
+            <form className='contact-form' onSubmit={handleSubmit}>
               <label>Name</label>
-              <input type="text" placeholder='Enter your name' />
+              <input 
+              type="text" 
+              name="name"
+              placeholder='Enter your name'
+              value={details.name}
+              onChange={handleInput}
+              />
+
               <label>Email</label>
-              <input type="email" placeholder='Enter your email' />
+              <input 
+              type="email" 
+              name="email"
+              placeholder='Enter your email'
+              value={details.email} 
+              onChange={handleInput}
+              />
+              
               <label>Message</label>
-              <textarea rows="6" placeholder='Type your message here' ></textarea>
+              <textarea rows="6" 
+              name="message"
+              placeholder='Type your message here' 
+              value={details.message}
+              onChange={handleInput}
+              ></textarea>
               <button type='submit' className='contact-btn'>Send Message</button>
             </form>
         </div>
