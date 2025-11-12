@@ -15,9 +15,29 @@ export default function Contact(props) {
     });
   }
 
-  const handleSubmit=(event)=>{
-    console.log(details);
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("http://localhost:3000/contacts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(details),
+    });
+
+    if (response.ok) {
+      alert("Form submitted successfully!");
+      setDetails({ name: "", email: "", message: "" });
+    } else {
+      alert("Failed to submit form.");
+    }
+  } catch (error) {
+    console.error("Error:", error);
   }
+};
+
 
   return (
     <div>
