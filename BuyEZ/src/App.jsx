@@ -8,6 +8,7 @@ import Shop from './Components/Shop.jsx';
 import Blog from './Components/Blog.jsx';
 import Contact from './Components/Contact.jsx';
 import appStore from './Redux_Components/appStore.jsx';
+import Cart from './Components/Cart.jsx';
 import { Provider } from "react-redux";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                 <Route path='/' element={<HomePage/>}/>
                 <Route path='/about' element={<AboutUs name="About us"/> }/>
                 <Route path='/shop' element={<Shop name="Products" />}/>
+                <Route path='/cart' element={<Cart name="Cart" />}/>
                 <Route path='/blog' element={<Blog name="Blogs" />}/>
                 <Route path='/contact' element={<Contact name="Contact" />}/>  
               </Routes>

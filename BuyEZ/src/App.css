@@ -106,6 +106,28 @@ ul.nav-links>li>a{
 
 /* Css for Product List Ends */
 
+/* Css For Cart Page Starts */
+.cart-list{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.shop-btn{
+  border-radius:0px;
+  border:1px solid black;
+  font-weight:600;
+}
+.shop-btn:hover{
+  color:#fff;
+  background-color:#b97a4f;
+  border:none;
+}
+
+
+
+
+/* Css For Cart Page Ends*/
+
 /* CSS For Blog Page */
 .blog-container{
   display:flex;

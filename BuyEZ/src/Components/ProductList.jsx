@@ -24,8 +24,8 @@ export default function ProductList() {
       dispatch(addItem(product));
     };
 
-    const handleRemoveItem = () => {
-      dispatch(removeItem("jeans"));
+    const handleRemoveItem = (product) => {
+      dispatch(removeItem(product));
     };
 
     return(
