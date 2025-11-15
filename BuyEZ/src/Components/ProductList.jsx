@@ -9,7 +9,7 @@ export default function ProductList() {
   const dispatch = useDispatch();
 
    useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
+        fetch('https://api.pujakaitem.com/api/products')
         .then(res=>res.json())
         .then(data=>{
             setProducts(data)
@@ -33,10 +33,10 @@ export default function ProductList() {
           {products.map((product) => (
             <div className='product-card' key={product.id}>
               <img src={product.image} className='product-img'></img>
-              <h4>{product.title}</h4>
-              <p>{product.price}$</p>
+              <h2>{product.name}</h2>
+              <p>Price : {product.price}$</p>
+              <p>Category : {product.category}</p>
               <button onClick={() => handleAddItem(product)} className='add-cart-btn'>Add +</button>
-              <button onClick={() => handleRemoveItem(product)} className='remove-cart-btn'>Remove - </button>
             </div>
           ))}
       </div>

@@ -122,7 +122,17 @@ ul.nav-links>li>a{
   background-color:#b97a4f;
   border:none;
 }
-
+.cart-list{
+  margin:60px 20px;
+}
+.cc-btn{  
+  padding:10px 20px;
+  background-color:#213547;
+  color:#ffffff;
+  border:none;
+  border-radius:0px;
+  cursor:pointer;
+}
 
 
 
