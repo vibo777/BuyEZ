@@ -1,6 +1,5 @@
 import React, { useState , useEffect } from 'react';
 import {addItem} from '../Redux_Components/cartSlice';
-import {removeItem} from '../Redux_Components/cartSlice';
 import { useDispatch } from 'react-redux';
 
 export default function ProductList() {
@@ -24,9 +23,6 @@ export default function ProductList() {
       dispatch(addItem(product));
     };
 
-    const handleRemoveItem = (product) => {
-      dispatch(removeItem(product));
-    };
 
     return(
       <div className='product-list'>

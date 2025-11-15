@@ -21,7 +21,7 @@ export default function Cart(props) {
       </div>
       {cartItems.length == 0 && (
         <>
-            <h1>Your cart is empty</h1>
+            <h1 className='mt-5'>Your cart is empty</h1>
             <Link to="/shop">
                 <button className="shop-btn">Continue Shopping</button>
             </Link>
