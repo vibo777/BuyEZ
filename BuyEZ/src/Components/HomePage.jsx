@@ -8,7 +8,7 @@ export default function HomePage() {
       {/* <h1>Welcome !!! to BuyEz Smart Store.</h1>
       <h2>Your all in one STOP for all your Fasion Needs.</h2> */}
       <Slider />
-      <Offer />
+     
     </div>
   )
 }

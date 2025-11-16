@@ -1,14 +1,14 @@
 import React, { useState , useEffect } from 'react';
 import {addItem} from '../Redux_Components/cartSlice';
 import { useDispatch } from 'react-redux';
-
+import { Link } from 'react-router-dom';
 export default function ProductList() {
 
   const[products, setProducts] = useState([]);
   const dispatch = useDispatch();
 
    useEffect(() => {
-        fetch('https://api.pujakaitem.com/api/products')
+        fetch('https://fakestoreapi.com/products')
         .then(res=>res.json())
         .then(data=>{
             setProducts(data)
@@ -28,11 +28,13 @@ export default function ProductList() {
       <div className='product-list'>
           {products.map((product) => (
             <div className='product-card' key={product.id}>
-              <img src={product.image} className='product-img'></img>
-              <h2>{product.name}</h2>
-              <p>Price : {product.price}$</p>
-              <p>Category : {product.category}</p>
-              <button onClick={() => handleAddItem(product)} className='add-cart-btn'>Add +</button>
+              <Link to={`/product/${product.id}`}>
+                <img src={product.image} className='product-img'></img>
+                <h2>{product.name}</h2>
+                <p>Price : {product.price}$</p>
+                <p>Category : {product.category}</p>
+                <button onClick={() => handleAddItem(product)} className='add-cart-btn'>Add +</button>
+              </Link>
             </div>
           ))}
       </div>
