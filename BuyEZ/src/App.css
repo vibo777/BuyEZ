@@ -68,34 +68,65 @@ ul.nav-links>li>a{
 /* CSS for Banner Section Ends*/
 
 /* Offer section CSS Start  */
-.offer-card-bg-1{
-  margin:0px 0px;
-  padding:0px 0px;
-  width:100%;
-  height:300px;
-  object-fit: contain;
-  background-image: url(https://velaflash.myshopify.com/cdn/shop/files/bannerg9_540x.jpg?v=1621089827);
+.offer-section{
+  display:flex;
 }
-.offer-card-bg-2{
+.offer-card-bg-1,.offer-card-bg-2,.offer-card-bg-3{
   margin:0px 0px;
   padding:0px 0px;
   width:100%;
-  height:300px;
-  object-fit: contain;
-  background-image:url(https://velaflash.myshopify.com/cdn/shop/files/bannerg8_540x.jpg?v=1621089725);
+  height:400px;
+  overflow:hidden;
 }
-.offer-card-bg-3{
-  margin:0px 0px;
-  padding:0px 0px;
+.offer-card-bg-1 img,.offer-card-bg-2 img,.offer-card-bg-3 img{
   width:100%;
-  height:300px;
-  object-fit: contain;
-  background-image:url(https://velaflash.myshopify.com/cdn/shop/files/bannerg10_540x.jpg?v=1621089847);
+  height:100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.offer-card-bg-1:hover img,
+.offer-card-bg-2:hover img,
+.offer-card-bg-3:hover img{
+  transform : scale(1.18);
+  cursor:pointer;
+}
+.offer-text{
+  position: absolute;
+  display: inline-block;
+  top: 765px;
+  z-index: 1;
+  left: 580px;
+}
+.offer-cta{
+  font-size: calc(var(--font-size-base) - 1px);
+  padding: 19px 40px 16px;
+  text-transform: uppercase;
+  min-width: 200px;
+  color:#ffffff;
+  background-color: transparent;
+  border:1px solid #ffffff;
+  margin-top:20px;
+}
+.offer-cta:hover{
+  background-color:#b97a4f;
+  color:#ffffff;
+  border:none;
+  outline: none;
 }
 
 /* Offer section CSS Ends  */
 
 /* Css for Product List */
+.product-title{
+  font-size:16px;
+  font-weight:bold;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;      /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;    /* Adds "..." at the end */
+}
+
 .product-list{
   display: flex;
   justify-content: center;
@@ -103,6 +134,7 @@ ul.nav-links>li>a{
   margin: 50px 50px;
 }
 .product-card{
+  width:300px;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
@@ -166,8 +198,6 @@ ul.nav-links>li>a{
   cursor:pointer;
 }
 /* Css For Cart Page Ends*/
-
-
 
 
 /* CSS For Blog Page */

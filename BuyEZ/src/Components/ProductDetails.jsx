@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { addItem } from "../Redux_Components/cartSlice";
+import { useDispatch } from "react-redux";
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -24,6 +26,11 @@ export default function ProductDetails() {
       });
   }, [id]);
 
+  const dispatch = useDispatch(); 
+  const handleAddItem = () => {
+    dispatch(addItem(product));
+  }
+
   if (loading) return <h2 style={{ textAlign: "center" }}>Loading...</h2>;
 
   if (error) return <h2 style={{ textAlign: "center", color: "red" }}>{error}</h2>;
@@ -34,7 +41,7 @@ export default function ProductDetails() {
         <img src={product.image} alt={product.title} style={styles.image} />
       </div>
 
-      <div style={styles.detailsBox}>
+      <div className="" style={styles.detailsBox}>
         <h1 style={styles.title}>{product.title}</h1>
         <p style={styles.category}>Category: {product.category}</p>
 
@@ -42,7 +49,7 @@ export default function ProductDetails() {
 
         <p style={styles.description}>{product.description}</p>
 
-        <button style={styles.button}>
+        <button onClick={handleAddItem()} style={styles.button}>
           Add to Cart
         </button>
       </div>
@@ -66,7 +73,7 @@ const styles = {
     objectFit: "contain",
     borderRadius: "10px",
   },
-  detailsBox: { flex: 1 },
+  detailsBox: { flex: 1,textAlign:"left" },
   title: { fontSize: "28px", fontWeight: "bold" },
   category: { color: "#555" },
   price: { color: "#2a9d8f", fontSize: "26px", margin: "20px 0" },
@@ -77,7 +84,7 @@ const styles = {
     background: "#000",
     color: "#fff",
     border: "none",
-    borderRadius: "8px",
+    borderRadius: "0px",
     cursor: "pointer",
   },
 };
