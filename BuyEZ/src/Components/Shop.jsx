@@ -16,7 +16,7 @@ export default function Shop(props) {
         transition={{ type: "spring", stiffness: 200 }}
         className="text-center p-4"
       > 
-        <ProductList />
+      <ProductList />
       </motion.div>
     </>
     

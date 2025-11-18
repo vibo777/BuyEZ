@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from './Slider';
 import Offer from './Offers';
+import TopSellingProducts from './TopSellingProducts';
 
 export default function HomePage() {
   return (
@@ -9,7 +10,7 @@ export default function HomePage() {
       <h2>Your all in one STOP for all your Fasion Needs.</h2> */}
       <Slider />
       <Offer />
-     
+      <TopSellingProducts/>
     </div>
   )
 }
