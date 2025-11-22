@@ -116,6 +116,63 @@ ul.nav-links>li>a{
 
 /* Offer section CSS Ends  */
 
+/* About Us Page css */
+.about-us-section{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+.about-us-mission{
+  text-align: left;
+  margin: 50px 0px;
+}
+.about-us-mission h1{
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.about-us-mission h2{
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.about-us-mission p{
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555555;
+}
+.about-us-image{
+  width: 100%;
+  height: auto;
+  padding:50px;
+  margin-top: 30px;
+  border-radius: 8px;
+  background-image: url("https://img.freepik.com/free-photo/beauty-skincare-products-bathroom_53876-133303.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.about-us-button{
+  font-size: calc(var(--font-size-base) - 1px);
+  padding: 19px 40px 16px;
+  text-transform: uppercase;
+  min-width: 200px;
+  color:#090202;
+  background-color: transparent;
+  border:1px solid #090202;
+  margin-top:20px;
+  font-weight:bold;
+}
+.about-us-button:hover{
+  background-color:#b97a4f;
+  color:#ffffff;
+  border:none;
+  outline: none;
+}
+
+/* About Us Page css Ends */
+
 /* Css for Product List */
 .product-title{
   font-size:16px;
