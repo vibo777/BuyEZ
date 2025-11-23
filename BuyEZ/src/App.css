@@ -30,6 +30,7 @@ a {
   margin-top: 1rem;
   list-style-type: none;
   margin-right:200px;
+  padding-left: 100px;
 }
 ul.nav-links>li>a{
   color: #222222;
