@@ -49,7 +49,7 @@ export default function ProductDetails() {
 
         <p style={styles.description}>{product.description}</p>
 
-        <button onClick={handleAddItem()} style={styles.button}>
+        <button onClick={handleAddItem} style={styles.button}>
           Add to Cart
         </button>
       </div>

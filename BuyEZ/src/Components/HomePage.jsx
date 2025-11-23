@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from './Slider';
 import Offer from './Offers';
 import TopSellingProducts from './TopSellingProducts';
+import BlogSection from './BlogSection';
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Slider />
       <Offer />
       <TopSellingProducts/>
+      <BlogSection/>
     </div>
   )
 }

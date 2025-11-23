@@ -114,6 +114,46 @@ ul.nav-links>li>a{
   outline: none;
 }
 
+.top-selling-products{
+  margin:70px 0px;
+}
+.top-selling-products > p{
+  color:#555555;
+  margin-bottom:50px;
+  font-weight: bold;
+}
+.top-prod-container{
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+}
+.top-product-img{
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+  background-color:#f6f6f6;
+  padding:50px
+}
+
+/* Blog section in Homepage CSS */
+
+.blog-section{
+  margin-top:100px;
+  padding-bottom:100px;
+  background-color:#f8f4f0;
+}
+.blog-card-title{
+  font-size:20px;
+  font-weight:bold;
+}
+.blog-card-body{
+  margin-top:15px;
+  color:#555555;
+  font-weight: normal;
+}
+
 /* Offer section CSS Ends  */
 
 /* About Us Page css */
@@ -158,11 +198,12 @@ ul.nav-links>li>a{
   padding: 19px 40px 16px;
   text-transform: uppercase;
   min-width: 200px;
-  color:#090202;
+  color:#1e1e1e;
   background-color: transparent;
-  border:1px solid #090202;
+  border:2px solid #c7b5b5;
   margin-top:20px;
   font-weight:bold;
+  text-transform: none;
 }
 .about-us-button:hover{
   background-color:#b97a4f;
@@ -182,6 +223,8 @@ ul.nav-links>li>a{
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;    /* Adds "..." at the end */
+  margin-top:20px;
+  line-height: 1.6;
 }
 
 .product-list{
@@ -200,7 +243,7 @@ ul.nav-links>li>a{
   text-align: center;
 }
 .product-card img {
-  width: 300px;
+  width: 250px;
   height: 300px;
   border-radius: 4px;
   object-fit: contain;
@@ -353,7 +396,10 @@ ul.nav-links>li>a{
   margin: 0 auto;
 }
 .form-container{
+  margin-left:5%;
+  margin-right:5%;
   display: flex;
+  margin-bottom: 60px;
 }
 .form-container  > .left{
   flex: 1;

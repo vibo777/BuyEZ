@@ -45,7 +45,7 @@ export default function Blog(props) {
     <div className="blog-container">
       {posts.slice(firstIndex,lastIndex).map(post => (
         <div className="blog-card" key={post.id}>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qcfDI8z36AkniszDbj8wWMyS4nmkBB66PA&s" alt="posts_img"/> 
+          <img src="https://img.freepik.com/free-photo/summer-spring-break-holiday-vacation-leisure-concept_53876-31829.jpg" alt="posts_img"/> 
           <div className="blog-content">
             <h1 className="blog-title">{post.title}</h1>
             <h2 className="blog-description">{post.body}</h2>
