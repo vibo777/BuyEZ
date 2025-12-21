@@ -22,7 +22,7 @@ export default function BlogSection() {
                 <div className="col-md-4 mb-4">
                     <div className="card h-100 shadow-sm" key={blog.id}>
                     <img
-                        src="https://img.freepik.com/free-psd/3d-rendering-still-life-bag-content_23-2151662503.jpg" alt="posts_img"
+                        src="https://img.freepik.com/free-psd/3d-rendering-still-life-bag-content_23-2151662503.jpg" 
                         className="card-img-top"
                         alt={blog.title}
                         style={{ height: "200px", objectFit: "cover" }}
