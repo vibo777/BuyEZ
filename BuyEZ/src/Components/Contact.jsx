@@ -40,7 +40,7 @@ export default function Contact(props) {
 
 
   return (
-    <div>
+    <div className="col-md-6 col-lg-12">
       <Banner/>
       <div className='banner-title'>
         <h1>{props.name}</h1>

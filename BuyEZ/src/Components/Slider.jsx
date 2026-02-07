@@ -19,9 +19,9 @@ export default function Slider() {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide><img src="https://velaflash.myshopify.com/cdn/shop/files/slideg31_1512x.jpg?v=1621089040" alt="Slide 1" /></SwiperSlide>
-      <SwiperSlide><img src="https://velaflash.myshopify.com/cdn/shop/files/slideg33_1512x.jpg?v=1621089040" alt="Slide 2" /></SwiperSlide>
-      <SwiperSlide><img src="https://velaflash.myshopify.com/cdn/shop/files/slideg32_1512x.jpg?v=1621089040" alt="Slide 3" /></SwiperSlide>
+      <SwiperSlide><img className="slider-img" src="https://velaflash.myshopify.com/cdn/shop/files/slideg31_1512x.jpg?v=1621089040" alt="Slide 1" /></SwiperSlide>
+      <SwiperSlide><img className="slider-img" src="https://velaflash.myshopify.com/cdn/shop/files/slideg33_1512x.jpg?v=1621089040" alt="Slide 2" /></SwiperSlide>
+      <SwiperSlide><img className="slider-img" src="https://velaflash.myshopify.com/cdn/shop/files/slideg32_1512x.jpg?v=1621089040" alt="Slide 3" /></SwiperSlide>
     </Swiper>
   )
 }

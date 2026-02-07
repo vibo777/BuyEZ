@@ -41,7 +41,7 @@ export default function ProductDetails() {
         <img src={product.image} alt={product.title} style={styles.image} />
       </div>
 
-      <div className="" style={styles.detailsBox}>
+      <div className="mt-5" style={styles.detailsBox}>
         <h1 style={styles.title}>{product.title}</h1>
         <p style={styles.category}>Category: {product.category}</p>
 

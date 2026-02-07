@@ -8,8 +8,8 @@ export default function AboutUs(props) {
         <h1>{props.name}</h1>
       </div>
       <div className="container">
-      <div className="row about-us-section">
-        <div className="col-6 about-us-mission">
+      <div className="col-12 col-md-6 col-lg-12 row about-us-section">
+        <div className="col-12 col-md-5 col-lg-5 about-us-mission">
           <h1>01</h1>
           <h3>Our Mission</h3>
           <p>
@@ -25,8 +25,8 @@ export default function AboutUs(props) {
             <button className="about-us-button">Contact Us</button>
           </Link>
         </div>
-        <div className="col-1"></div>
-        <div className="col-5 about-us-image">
+        <div className="col-12 col-md-1 col-lg-1"></div>
+        <div className="col-12 col-md-6 col-lg-6 about-us-image">
         </div>
       </div>
     </div>

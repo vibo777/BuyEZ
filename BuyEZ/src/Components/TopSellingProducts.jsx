@@ -41,8 +41,6 @@ export default function TopSellingProducts() {
           <button className='about-us-button'>See All Products</button>
         </Link>
       </div>
-
-
     </div>
   );
 }

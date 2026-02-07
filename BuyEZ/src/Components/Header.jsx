@@ -9,27 +9,27 @@ export default function Header() {
 
   return (
     <div className="header-container">
-      {/* Logo */}
-      <a href="/">
-        <img className="logo" src={logo} alt="Logo" />
-      </a>
-
-      {/* Hamburger (Mobile only) */}
+        {/* Hamburger (Mobile only) */}
       <button
         className="hamburger"
         onClick={() => setMenuOpen(!menuOpen)}
       >
         ☰
       </button>
+      
+      {/* Logo */}
+      <a href="/">
+        <img className="logo" src={logo} alt="Logo" />
+      </a>
 
       {/* Navigation */}
       <nav className={`header ${menuOpen ? "open" : ""}`}>
         <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/shop">Shop</Link></li>
-          <li><Link to="/blog">Blogs</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li onClick={()=>{setMenuOpen(false)}}><Link to="/">Home</Link></li>
+          <li onClick={()=>{setMenuOpen(false)}}><Link to="/about">About</Link></li>
+          <li onClick={()=>{setMenuOpen(false)}}><Link to="/shop">Shop</Link></li>
+          <li onClick={()=>{setMenuOpen(false)}}><Link to="/blog">Blogs</Link></li>
+          <li onClick={()=>{setMenuOpen(false)}}><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
 

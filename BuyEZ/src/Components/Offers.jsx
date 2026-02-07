@@ -5,13 +5,13 @@ export default function Offers() {
   return (
     <div className="mt-0">
         <div className="offer-section">
-            <div className="col-md-4">
+            <div className="col-12 col-md-6 col-lg-4">
                 <div className="bg-light border rounded offer-card-bg-1">
                     <img src="https://velaflash.myshopify.com/cdn/shop/files/bannerg9_540x.jpg?v=1621089827" alt="offer1" />
                 </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-12 col-md-6 col-lg-4">
                 <div className="bg-light border rounded offer-card-bg-2">
                     <img src="https://velaflash.myshopify.com/cdn/shop/files/bannerg8_540x.jpg?v=1621089725" alt="offer1" />
                     <div className="text-b">
@@ -26,7 +26,7 @@ export default function Offers() {
                 </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-12 col-md-6 col-lg-4">
                 <div className="bg-light border rounded offer-card-bg-3">
                     <img src="https://velaflash.myshopify.com/cdn/shop/files/bannerg10_540x.jpg?v=1621089847" alt="offer1" />
                 </div>
