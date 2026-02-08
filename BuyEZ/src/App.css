@@ -580,7 +580,7 @@ ul.nav-links>li>a{
     position: relative;
   }
   .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden{
-    height: 250px;
+    height: 250px !important;
   }
   .slider-img{
     height:250px !important;
@@ -633,7 +633,13 @@ ul.nav-links>li>a{
   .offer-section{
     display: block;
   }
-
+  .offer-text {
+    position: absolute;
+    display: inline-block;
+    top: 900px !important;
+    z-index: 1;
+    left: 110px !important;
+  }
 
   /* Contact page Css */
   .form-container{

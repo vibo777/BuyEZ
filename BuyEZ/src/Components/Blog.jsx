@@ -53,7 +53,7 @@ export default function Blog(props) {
         </div>
       ))}
     </div>
-    <div className="pagination-wrapper">
+    <div className="pagination-wrapper mt-3 mb-3">
       {
         pages.map((page,index) =>{
           return (
@@ -64,7 +64,7 @@ export default function Blog(props) {
         })
       }
     </div>
-    <div className="prev-next-btn">
+    <div className="prev-next-btn mt-3 mb-3">
       <button disabled={currentPage == 1} onClick={()=>{
         setCurrentPage(currentPage-1);
       }}>Prev</button>
@@ -73,7 +73,7 @@ export default function Blog(props) {
       }}>Next</button>
     </div>
 
-    <div className="post-per-page-container">
+    <div className="post-per-page-container mt-3 mb-3">
       <label>Select Posts Per Page : </label>
       <select onChange={(e)=>changeDropdown(e)} id='post-dropdown'>
         <option value="5">5</option>
